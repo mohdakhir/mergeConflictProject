@@ -14,9 +14,6 @@ public class Controller {
         return "hello docker";
     }
 
-    @GetMapping("/{id}")
-    public String getById(@PathVariable Long id){
-        return "get Data by Id";
-    }
+    
     
 }
