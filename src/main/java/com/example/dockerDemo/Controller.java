@@ -1,11 +1,9 @@
 package com.example.dockerDemo;
 
-import org.apache.logging.log4j.status.StatusData;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
@@ -16,8 +14,16 @@ public class Controller {
     {
         return "hello docker";
     }
+    
+   
+
     @GetMapping(value="path")
-    public String getMethodName(@RequestParam String param) {
+    private String getMethodName(@RequestParam String param) {
+        return "akhir";
+    }
+
+    @GetMapping(value="path")
+    private String getMethod(@RequestParam String param) {
         return "akhir";
     }
     
